@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Datalist</title>
+    <style>
+        fieldset{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body align="center">
+<fieldset>
+    <h1>Form with Datalist</h1>
+    <form action="/submit" method="post">
+        <label for="browsers">Choose your favorite browser:</label>
+        <input list="browsers" id="browser" name="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+            <option value="Opera">
+        </datalist>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</fieldset>
+</body>
+</html>
